@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+     
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;600;700&display=swap');
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.container-full{
+    width: 100%; 
+}
+
+.container:before,
+.container:after,
+.container-full:before
+.container-full:after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+.col-100{
+    width: 100%;
+    
+    padding: 0 25px;
+
+}
+
+.col-50{
+    width: 50%;
+    float: left;
+
+}
+
+.col-30{
+    width: 30%;
+    padding: 0 25px;
+    float: 25px;
+}
+
+.col-70{
+    width: 70%;
+
+}
+
+.col-33{
+    width: 33%;
+    padding: 0 25px;
+    float: left;    
+    
+}
+
+.col-25{
+    width: 25%;
+    padding: 0 25px;
+    float: left ;
+    
+}
+
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+/*=========== Default CSS End =========*/
+
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+/*=== top header css start===*/
+
+#top-header{
+    background-color:#1D1D1D;
+    padding: 12px 0;
+    
+}
+
+.number{
+  color: #b6b6b6;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none ;
+  transition: .3s;
+  letter-spacing: 0.2px;
+  opacity: .9;
+  margin-left: 22px;
+  
+  
+
+}
+.social{
+    display: inline-block;
+    color: #b6b6b6;
+    list-style: none;
+    margin-left: 30px;
+    opacity: .9;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.social li{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 3px;
+}
+.social a{
+    color: #b6b6b6;
+    transition: .3s;
+    
+
+}
+
+
+.login-regester{
+    float: right;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+.login-regester a{
+    color: #b6b6b6;
+    margin-left: 20px;
+    transition: .3s;
+    
+}
+
+.login-regester i{
+    margin-right: 4px;
+}
+
+.number:hover,
+.social a:hover,
+.login-regester a:hover{
+    color: #F11C22;
+}
+
+/*=== top header css end===*/
+
+
+/*=== header start ===*/
+
+header{
+    padding: 24px 0;
+}
+
+
+
+.logo img{
+    width: 200px;
+    
+}
+
+
+.menu{
+    list-style: none;
+    float: right;
+    padding-top: 10px;
+    
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.menu a{
+    text-transform: capitalize;
+    color: #252525;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 17px;
+    margin: 0 0 0 20px;
+    transition: .3s solid transparant ;
+
+}
+
+.menu-icon{
+    margin-left: 15px !important;
+    border-bottom: none !important;
+    
+}
+
+.menu-icon-padding{
+    padding: 0 !important;
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid #FF1949;
+
+
+}
+
+.menu-icon:hover{
+    color: #F11C22;
+}
+
+.active{
+    border-bottom: 3px solid #FF1949 !important;
+}
+
+/*=== header end ===*/
+
+
+/*=== home css start ===*/ 
+
+.home{
+    background: url(../image/home/home\ image1.jpg);
+    padding: 200px 0;
+    color: #fff;
+}
+
+.home h1{
+    font-size: 92px;
+    font-weight: 700;
+    position: relative;
+    
+}
+
+.home h1::before{
+    position: absolute;
+    height: 3px;
+    width: 60px;
+    content: "";
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.home p{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 40px 0;
+}
+
+.btn{
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: .2s;
+    margin-right: 30px;
+    
+}
+
+.btn i{
+    visibility: hidden;
+    transition: .2s;
+}
+
+.btn:hover i{
+    visibility: visible;
+
+}
+
+.btn-active{
+    background: #F11C22; 
+    border: 2px solid #F11C22;;
+}
+
+/*=== home css end ===*/
+
+
+
+/*=== course css start ===*/
+
+.course-menu{
+    list-style: none;
+    padding-bottom: 40px;
+    
+}
+.course-menu li{
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 17px;
+    color: #252525;
+    margin-right: 30px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.courses-image{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-image img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+
+.crs-ctg{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    color: #fff;
+    padding: 13px 25px;
+    background: #d62d20;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.crs-ctg:hover{
+    background: #252525;
+}
+
+.curses-box:hover img{
+    transform: scale(1.05);
+}
+
+.courses-details h3 a{
+font-size: 20px;
+color: #252525;
+text-transform: capitalize;
+transition: .3s;
+margin: 20px 0 10px 0;
+display: inline-block;
+}
+
+.courses-details h3 a:hover{
+    color: #fe1949;
+    text-decoration: underline;
+}
+
+.instractor{
+    font-size: 15px;
+    color:#252525 ;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.instractor::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background: red;
+    top: 30px;
+    transition: .4s;
+}
+
+.curses-box:hover .instractor::before{
+    width: 60px;
+}
+
+
+.courses-details p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #444;
+}
+
+.courses-footer{
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.courses-footer a{
+    color: #252525;
+    text-transform: capitalize;
+
+}
+
+.courses-footer i{
+    padding-right: 4px;
+}
+
+.ratings{
+    margin-left: 20px;
+}
+
+.free{
+    float: right;
+    font-size: 20px;
+    color: #f01845 !important;
+    font-weight: 600;
+}
+
+
+/*=== course css end ===*/
+
+/*===== expart css Start===*/
+
+.expart-box{
+    width: 100%;
+    height: 445px;
+    background: #d62d20;
+}
+
+.expart-box1{
+    background: #fe1949;
+}
+
+.expart-box2{
+    background: url(../image/expart\ image/expart1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.expart-box3{
+    background: url(../image/expart\ image/expart2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.expart-box4{
+    background:url(../image/expart\ image/expart3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.expart-box{
+    padding: 100px 169px;
+    color: #fff;
+}
+
+.expart-box h3{
+    font-size: 45px;
+    padding-bottom: 10px;
+
+}
+
+.expart-box a{
+    font-size: 17px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    
+    
+}
+
+.expart-box4 a{
+    font-size: 17px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    
+}
+
+.expart-box4 a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    background: #252525 !important;
+    top: 20px;
+}
+
+.expart-box4 h3,
+.expart-box4 a{
+    color: #252525;
+
+}
+
+.expart-box a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 85px;
+    background:#fff ;
+    top: 20px;
+}
+
+
+#expert .container-full {
+    display: flex;
+    flex-wrap: wrap;
+}
+#expert .col-50 {
+    float: none;
+    display: inline-block;
+}
+
+/*===== expart css end===*/
+
+/*===== teachers section css stare===*/
+.section-title{
+    padding-left: 25px;
+    padding-bottom: 70px;
+}
+
+.section-title h2{
+    font-size: 45px;
+    color: #252525;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.section-title h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    left: 0;
+    bottom: 20px;
+    background: #FE1A49;
+}
+
+
+.section-title p{
+    font-size: 19px;
+    color: #333;
+}
+
+.teachers-single{
+    display: flex;
+}
+
+.teachers-single-left{
+    height: 140px;
+    width: 140px;
+}
+
+.teachers-single-right{
+    color: #252525;
+    padding: 30px;
+}
+
+.teachers-single-right h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 0;
+
+}
+.teachers-single-right span{
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.teachers-single-right ul{
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+.teachers-single-right ul li{
+    display: inline-block;
+}
+
+.teachers-single-right ul li a{
+    font-size: 14px;
+    margin-right: 4px;
+    color: #252525;
+}
+
+.teachers-single-right ul li a:hover{
+  color: #FF1949;
+}
+    
+.teachers-single{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.teachers.section-padding{
+    padding-bottom: 90px;
+}
+
+
+/*===== teachers section css end===*/
+
+
+/*===== review section css start===*/
+
+.review{
+    background:#FF1949;
+}
+
+.review-author{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+
+}
+
+.review-single{
+    display: flex;
+}
+
+.review-feedback{
+    padding-left: 50px;
+}
+
+.review-feedback p{
+    font-size: 45px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.review-feedback span{
+    font-size: 19px;
+    padding-top: 10px;
+    color: #fff;
+    display: inline-block;
+}
+
+/*===== review section css end===*/
+
+/*===== tour section css start===*/
+
+.tour-list{
+    list-style: none;
+    
+}
+
+.tour-list li i{
+    color: #FF1949;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+.tour-list li{
+    padding-left: 25px;
+}
+
+/*===== tour section css end===*/
+
+/*===== form section css start===*/
+
+.form{
+    background-image: url(../image/form\ image/form1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.form::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .2;
+
+
+}
+
+.form-left{
+    background: #FF1949;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.form-left h3{
+    font-size: 45px;
+    padding: 170px 70px;
+}
+
+.form-right{
+    background: #fff;
+    padding: 120px 70px;
+    margin-right: 100px;
+    position: relative;
+
+}
+
+.form-right i{
+    position: absolute;
+    font-size: 60px;
+    left: -14px;
+    top: 50%;
+    color: #fff;
+
+}
+
+.form-right input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.form-right h4{
+    font-size: 28px;
+    color: #252525;
+    text-transform: capitalize;
+}
+
+.form-right input[type="submit"] {
+    width: 150px;
+    padding: 20px 0;
+    background: #252525;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.form-right input[type="submit"]:hover{
+    background-color: #f01845;
+}
+
+/*===== form section css end===*/
+
+/*===== footer section css start===*/
+.footer{
+    background: #252525;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-single a{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.footer-single a:hover{
+    color: #fe1949;
+}
+
+.footer-single p{
+    margin-bottom: 30px;
+}
+
+.footer-single h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    background: #1D1D1D;
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.footer.section-padding{
+    padding-bottom: 0;
+}
+
+.copyright-right{
+    float: right;
+}
+
+.copyright-right ul{
+    display: inline-block;
+    padding-left: 30px;
+    
+}
+
+.copyright-right ul li{
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.copyright-right ul li a{
+    color: #b6b6b6;
+    transition: .3s;
+    
+}
+
+
+.copyright-right ul a:hover{
+    color: #f01845;
+}
+
+.copyright-left a{
+    color: #fff;
+}
+
+.copyright-left a:hover{
+    color: #fe1949;
+}
+
+/*===== footer section css end===*/
