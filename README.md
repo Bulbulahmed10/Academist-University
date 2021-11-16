@@ -1,1 +1,1 @@
-# Omexa-project
+# Academist University Project
